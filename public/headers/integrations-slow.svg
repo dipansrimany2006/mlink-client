@@ -1,0 +1,7 @@
+<svg width="550" height="140" viewBox="0 0 550 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header-text { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; }
+  </style>
+  <text x="50%" y="55" text-anchor="middle" class="header-text" font-size="46" fill="black">Integrations are slow.</text>
+  <text x="50%" y="115" text-anchor="middle" class="header-text" font-size="46" fill="black" opacity="0.5">Redirects are worse.</text>
+</svg>

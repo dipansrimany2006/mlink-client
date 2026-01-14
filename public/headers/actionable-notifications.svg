@@ -1,0 +1,7 @@
+<svg width="450" height="120" viewBox="0 0 450 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header-text { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; }
+  </style>
+  <text x="0" y="45" class="header-text" font-size="44" fill="black">Actionable,</text>
+  <text x="0" y="100" class="header-text" font-size="44" fill="black">Onchain Notifications</text>
+</svg>

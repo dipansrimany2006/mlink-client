@@ -1,0 +1,6 @@
+<svg width="400" height="70" viewBox="0 0 400 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header-text { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; }
+  </style>
+  <text x="50%" y="52" text-anchor="middle" class="header-text" font-size="52" fill="black">Blockchain Links</text>
+</svg>

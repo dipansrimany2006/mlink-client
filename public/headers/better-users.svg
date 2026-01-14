@@ -1,0 +1,6 @@
+<svg width="600" height="70" viewBox="0 0 600 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header-text { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; }
+  </style>
+  <text x="50%" y="52" text-anchor="middle" class="header-text" font-size="48" fill="black">It's Just Better for Your Users</text>
+</svg>
