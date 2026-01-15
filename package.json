@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@dipansrimany/mlink-sdk": "^0.3.1",
+    "@dipansrimany/mlink-sdk": "^0.4.2",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
