@@ -13,6 +13,9 @@ export interface IMLink extends Document {
   ownerAddress: string;
   apiKeyId: Types.ObjectId;
   status: MLinkStatus;
+  statusReason?: string;
+  statusUpdatedAt?: Date;
+  statusUpdatedBy?: string;
   tags: string[];
   createdAt: Date;
   updatedAt: Date;
@@ -61,6 +64,16 @@ const MLinkSchema = new Schema<IMLink>(
       enum: ['pending', 'approved', 'blocked'],
       default: 'pending',
       index: true,
+    },
+    statusReason: {
+      type: String,
+      maxlength: 500,
+    },
+    statusUpdatedAt: {
+      type: Date,
+    },
+    statusUpdatedBy: {
+      type: String,
     },
     tags: {
       type: [String],

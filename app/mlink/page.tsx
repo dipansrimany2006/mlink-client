@@ -96,7 +96,7 @@ function MlinkViewer() {
             stylePreset="default"
             registryUrl="https://mlink-client.vercel.app"
             requireRegistration={true}
-            allowPending={true}
+            allowPending={false}
             onSuccess={(hash, action) => {
               setTxHash(hash);
               console.log(`Transaction successful: ${hash}`);

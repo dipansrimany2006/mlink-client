@@ -1,10 +1,14 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useAccount } from 'wagmi';
 import { WalletButton } from '@/components/WalletButton';
+import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { Shield } from 'lucide-react';
 
 const navItems = [
   { href: '/dashboard', label: 'API Keys' },
@@ -18,6 +22,31 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const { address, isConnected } = useAccount();
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    async function checkAdmin() {
+      if (!isConnected || !address) {
+        setIsAdmin(false);
+        return;
+      }
+
+      try {
+        const response = await fetch('/api/admin/check', {
+          headers: {
+            'x-admin-address': address,
+          },
+        });
+        const data = await response.json();
+        setIsAdmin(data.isAdmin);
+      } catch {
+        setIsAdmin(false);
+      }
+    }
+
+    checkAdmin();
+  }, [address, isConnected]);
 
   return (
     <div className="min-h-screen bg-[#CCF1E7]">
@@ -51,7 +80,17 @@ export default function DashboardLayout({
               ))}
             </nav>
           </div>
-          <WalletButton />
+          <div className="flex items-center gap-3">
+            {isAdmin && (
+              <Link href="/admin">
+                <Button variant="mantle-outline" size="sm">
+                  <Shield className="w-4 h-4" />
+                  Admin Control
+                </Button>
+              </Link>
+            )}
+            <WalletButton />
+          </div>
         </div>
       </header>
 
@@ -71,6 +110,15 @@ export default function DashboardLayout({
             {item.label}
           </Link>
         ))}
+        {isAdmin && (
+          <Link
+            href="/admin"
+            className="px-3 py-1.5 rounded-md text-sm font-medium transition-colors whitespace-nowrap bg-[#00D395]/20 text-[#00D395] flex items-center gap-1"
+          >
+            <Shield className="w-3 h-3" />
+            Admin
+          </Link>
+        )}
       </nav>
 
       <main className="max-w-7xl mx-auto px-6 md:px-10 py-8">

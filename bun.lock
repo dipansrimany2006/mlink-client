@@ -4,7 +4,7 @@
     "": {
       "name": "my-v0-project",
       "dependencies": {
-        "@dipansrimany/mlink-sdk": "^0.3.1",
+        "@dipansrimany/mlink-sdk": "^0.4.2",
         "@hookform/resolvers": "^3.10.0",
         "@radix-ui/react-accordion": "1.2.2",
         "@radix-ui/react-alert-dialog": "1.1.4",
@@ -89,7 +89,7 @@
 
     "@date-fns/tz": ["@date-fns/tz@1.2.0", "", {}, "sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg=="],
 
-    "@dipansrimany/mlink-sdk": ["@dipansrimany/mlink-sdk@0.3.1", "", { "dependencies": { "zod": "^3.22.0" }, "peerDependencies": { "express": ">=4.0.0", "next": ">=14.0.0", "react": ">=18.0.0", "react-dom": ">=18.0.0" }, "optionalPeers": ["express", "next", "react", "react-dom"] }, "sha512-ZwSYfEMUYvqQZ4EYH3JAvzDYfXFsiek6NkH4qqioWIVpIWnqFrXhjA0c7s+GSMum/pPkoNT0kfxafPBZEubUQw=="],
+    "@dipansrimany/mlink-sdk": ["@dipansrimany/mlink-sdk@0.4.2", "", { "dependencies": { "zod": "^3.22.0" }, "peerDependencies": { "express": ">=4.0.0", "next": ">=14.0.0", "react": ">=18.0.0", "react-dom": ">=18.0.0" }, "optionalPeers": ["express", "next", "react", "react-dom"] }, "sha512-aniE5PveixWlGB7yPWHYarQn2oFNt75OM+b8Rs27DWyKULDmUZMR2/d4eLahNdAJYf+BCFb8u21tbsAduDez+Q=="],
 
     "@ecies/ciphers": ["@ecies/ciphers@0.2.5", "", { "peerDependencies": { "@noble/ciphers": "^1.0.0" } }, "sha512-GalEZH4JgOMHYYcYmVqnFirFsjZHeoGMDt9IxEnM9F7GRUUyUksJ7Ou53L83WHJq3RWKD3AcBpo0iQh0oMpf8A=="],
 
