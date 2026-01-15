@@ -88,7 +88,7 @@ function MlinkViewer() {
         </div>
 
         {/* Mlink Card */}
-        <div className="rounded-2xl overflow-hidden">
+        <div className="flex justify-center">
           <Mlink
             url={decodedUrl}
             adapter={adapter}
