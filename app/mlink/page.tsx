@@ -88,11 +88,11 @@ function MlinkViewer() {
         </div>
 
         {/* Mlink Card */}
-        <div className="bg-white/50 rounded-2xl border border-black/10 p-1 overflow-hidden">
+        <div className="rounded-2xl overflow-hidden">
           <Mlink
             url={decodedUrl}
             adapter={adapter}
-            theme="mantle"
+            theme="dark"
             stylePreset="default"
             registryUrl="https://mlink-client.vercel.app"
             requireRegistration={true}
