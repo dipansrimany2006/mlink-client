@@ -7,6 +7,11 @@ const nextConfig = {
     unoptimized: true,
   },
   serverExternalPackages: ['pino', 'pino-pretty', 'thread-stream'],
+  turbopack: {
+    resolveAlias: {
+      pino: 'pino/browser.js',
+    },
+  },
 }
 
 export default nextConfig
